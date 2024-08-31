@@ -32,7 +32,7 @@ func TestCorrectness1(t *testing.T) {
 		go func() {
 			defer wg.Done()
 			start.Done()
-			result := fak.Must(g.Do(context.Background(), 1, fn))
+			result := fak.Must(g.Do(1, fn)(context.Background()))
 			fak.Assert(result == numGoroutines, nil)
 		}()
 	}
@@ -46,17 +46,17 @@ func TestCorrectness2(t *testing.T) {
 	dead := sync.WaitGroup{}
 	dead.Add(1)
 
-	go g.Do(context.Background(), 1, func() int {
+	go g.Do(1, func() int {
 		start.Done()
 		dead.Wait()
 		return 2
 	})
 	start.Wait()
 	res, err := fak.Timeout(context.Background(), time.Millisecond*100, func(timeoutCtx context.Context) (int, error) {
-		return g.Do(timeoutCtx, 1, func() int {
+		return g.Do(1, func() int {
 			t.FailNow()
 			return 1
-		})
+		})(timeoutCtx)
 	})
 	if !errors.Is(err, context.DeadlineExceeded) {
 		t.Fatalf("unexpected %s", err)
@@ -78,7 +78,7 @@ func TestCorrectness3(t *testing.T) {
 	defer dead.Done()
 	count := atomic.Int64{}
 	for i := range numGoroutines {
-		go g.Do(context.Background(), i, func() int {
+		go g.Do(i, func() int {
 			count.Add(1)
 			start.Done()
 			dead.Wait()

@@ -1,12 +1,4 @@
-github.com/itsabgr/fak v0.0.0-20240831093832-70e687a29f1f h1:5STEBqhqRPY1fY2yLE3L5D55VDq3pAKo3KT38ct6cV4=
-github.com/itsabgr/fak v0.0.0-20240831093832-70e687a29f1f/go.mod h1:BwpqPCjqMBNGY2hjEIy6eCoP1WDw0p48siyy3GjVUXQ=
-github.com/itsabgr/fak v0.0.0-20240831100209-9e34ddcec5f9 h1:lw1zcp2BjrYtlBpbrCvBAF/rW0f8tTBlxlDFdDwydZs=
-github.com/itsabgr/fak v0.0.0-20240831100209-9e34ddcec5f9/go.mod h1:BwpqPCjqMBNGY2hjEIy6eCoP1WDw0p48siyy3GjVUXQ=
 github.com/itsabgr/fak v0.0.0-20240831105450-77fdb2033394 h1:Pjm216d0aurP9BWHZZ4cHV45l+9fSM+JuKy3KuRff2U=
 github.com/itsabgr/fak v0.0.0-20240831105450-77fdb2033394/go.mod h1:BwpqPCjqMBNGY2hjEIy6eCoP1WDw0p48siyy3GjVUXQ=
-github.com/itsabgr/go-completer v0.0.0-20230415115538-9f3ad594beaa h1:LE+OKeQR3T3lpA2Ka15AUIAnUb3QzlZq2VYJn2X6imM=
-github.com/itsabgr/go-completer v0.0.0-20230415115538-9f3ad594beaa/go.mod h1:mw6pPZOyl1PyA13/H3VxP8ZfJSnuWYEX8cHIhT5VfA4=
-github.com/itsabgr/go-completer v0.0.0-20240831094907-fb7ee7f8a59e h1:NE80tBhDK8KWyxfguFpRWXArk5zFbOLvP+ELkXXuZ1s=
-github.com/itsabgr/go-completer v0.0.0-20240831094907-fb7ee7f8a59e/go.mod h1:MWPz5WUZMPJfLjjImiwpwy2xZLTT3fH3OzNON/xBgCI=
 github.com/itsabgr/go-completer v0.0.0-20240831095622-cebe83791322 h1:F/bFdteuzcSha0s3OOsWWN+RnsnnSy8lFX5WR+J/0tY=
 github.com/itsabgr/go-completer v0.0.0-20240831095622-cebe83791322/go.mod h1:MWPz5WUZMPJfLjjImiwpwy2xZLTT3fH3OzNON/xBgCI=
