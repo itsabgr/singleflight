@@ -11,3 +11,7 @@ type Single[R any] struct {
 func (s *Single[R]) Do(fn func() R) completer.WaitContextFunc[R] {
 	return s.flight.Do(struct{}{}, fn)
 }
+
+func (s *Single[R]) Release() {
+	s.flight.Release()
+}

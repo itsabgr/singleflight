@@ -52,3 +52,8 @@ func (g *Group[K, V]) release(key K) {
 	defer g.mutex.Unlock()
 	delete(g._map, key)
 }
+func (g *Group[K, V]) Release() {
+	g.mutex.Lock()
+	defer g.mutex.Unlock()
+	clear(g._map)
+}
